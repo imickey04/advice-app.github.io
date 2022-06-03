@@ -11,7 +11,7 @@
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/wp433206-world-map-wallpaper-hd-1920x1080.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
