@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+#root, html, body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.app{
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/wp433206-world-map-wallpaper-hd-1920x1080.jpg');
+  background-size: auto;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: small;
+  box-shadow: 5px 5px 10px 3px rgba(208, 205, 127, 0.455);
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  height: 585px;
+}
+
+.btn{
+  outline: none;
+  position: relative;
+  height: 50px;
+  width: 210px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 89, 0.372);
+  border: 1px solid rgba(119, 126, 34, 0.991);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: .58;
+}
+
+.btn span{
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .7px;
+}
+
+.btn:hover {
+  animation: rotate 0.7s ease-in-out both;
+  opacity: 1;
+  border: .1px solid rgba(251, 251, 105, 0.484);
+}
+
+.btn:hover span{
+  animation: storm .7s ease-in-out both;
+  animation-delay: .03s;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+      width: 80%;
+      height: 30%;
+  }
+}
